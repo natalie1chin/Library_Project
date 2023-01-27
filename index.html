@@ -12,6 +12,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        background-color:bisque;
       "
     >
       <div>
@@ -21,16 +22,28 @@
           <table id="table" style="min-width: 680px; margin: 2rem">
             <thead>
               <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Read</th>
+                <form>
+                <th>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" >
+                </th>
+                <th>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" >
+                </th>
+                <th>
+                    <label for="read">Read</label>
+                    <input type="checkbox" id="read" name="read" >
+                </th>
+                <button type="submit">Submit</button>
+                </form>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tableBody">
               <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
+                <td style="font-weight:bold">Name of the Wind</td>
+                <td style="font-weight:bold">Patrick Rothfuss</td>
+                <td >
                   <input
                     type="checkbox"
                     name="read"
